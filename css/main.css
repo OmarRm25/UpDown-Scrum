@@ -1,5 +1,5 @@
 body{
-	background-image: url('../media/img/fondo.jpg');
+/*	background-image: url('../media/img/fondo.jpg');*/
 	min-width: 10%;
 	overflow-x: hidden;
 }
@@ -17,4 +17,11 @@ body{
 .boton:hover{
 	background-color: white !important;
 	color: #8e24aa !important;
+}
+.colorfondo{
+    background: #49c0f0;
+background: -moz-linear-gradient(-45deg, #49c0f0 31%, #49c0f0 42%, #2cafe3 54%, #2cafe3 54%, #2cafe3 71%);
+background: -webkit-linear-gradient(-45deg, #49c0f0 31%,#49c0f0 42%,#2cafe3 54%,#2cafe3 54%,#2cafe3 71%);
+background: linear-gradient(135deg, #49c0f0 31%,#49c0f0 42%,#2cafe3 54%,#2cafe3 54%,#2cafe3 71%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c0f0', endColorstr='#2cafe3',GradientType=1 );
 }
