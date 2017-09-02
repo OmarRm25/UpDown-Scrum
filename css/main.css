@@ -25,3 +25,15 @@ background: -webkit-linear-gradient(-45deg, #49c0f0 31%,#49c0f0 42%,#2cafe3 54%,
 background: linear-gradient(135deg, #49c0f0 31%,#49c0f0 42%,#2cafe3 54%,#2cafe3 54%,#2cafe3 71%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49c0f0', endColorstr='#2cafe3',GradientType=1 );
 }
+
+.materialUpDown {
+  display: block;
+/*  cursor: -webkit-zoom-in;*/
+/*  cursor: zoom-in;*/
+  position: relative;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  -webkit-backface-visibility: hidden;
+/*    border-radius: 50%;*/
+    
+}
