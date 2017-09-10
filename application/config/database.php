@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => 'diplojava.c851ordsixll.us-east-2.rds.amazonaws.com',
+	'username' => 'usrupdown',
+	'password' => 'ie9824hf7234',
+	'database' => 'updownapp',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
