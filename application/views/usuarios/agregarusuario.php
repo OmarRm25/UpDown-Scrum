@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Add users example</title>
+    <title>Alta de usuario</title>
   </head>
   <body>
     <?php

@@ -21,22 +21,29 @@ class Usuarios extends CI_Controller {
 
         public function agregar_usuario_view(){
           $this->load->helper('form');
+          $this->load->library('form_validation');
+          $this->load->library('session');
           $this->load->view('usuarios/agregarusuario');
         }
 
         public function agregar_usuario(){
           echo 'Agregando usuario...';
+          $this->form_validation->set_rules('email', 'email', 'trim|required|xss_clean');
+          $this->form_validation->set_rules('password', 'password', 'trim|required|xss_clean');
+          if ($this->form_validation->run() == FALSE) {
+              echo 'Error en el formulario';
+          }else{
           $this->load->model('usuarios_model');
 
           $data = array(
             'email' => $this->input->post('email'),
-            'password' => $this->input->post('password'),
+            'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
             'nombre' => $this->input->post('nombre'),
             'paterno' => $this->input->post('paterno'),
             'materno' => $this->input->post('materno')
-          );
-          $this->usuarios_model->insert($data);
-
+            );
+            $this->usuarios_model->insert($data);
+          }
         }
 
 }
