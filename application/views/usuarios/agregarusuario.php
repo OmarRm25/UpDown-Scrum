@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Alta de usuario</title>
-  </head>
+
   <body>
 
     <!-- Verificar si hay error en el formulario, el controlador regresa
@@ -50,6 +45,3 @@
 
     ?>
     <br>
-
-  </body>
-</html>

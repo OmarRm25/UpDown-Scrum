@@ -16,7 +16,7 @@ Scrumers Development Community de FES Aragón, UNAM" >
      <title>UpDown</title>
      <!--Import materialize.css-->
      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href=""<?php echo base_url(); ?>assets/css/materialize.css">
+      <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/materialize.css">
 
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
     <!--Let browser know website is optimized for mobile-->
