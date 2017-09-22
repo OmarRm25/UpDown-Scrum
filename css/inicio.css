@@ -5,12 +5,13 @@
     
 }
 body {
+  background:circle, #0288d1,#00bcd4, #81d4fa;    
   background: white; /* For browsers that do not sup1, #00bcd4, #81d4fa); /* Safari */
   background: -o-radial-gradient(circle, #0288d1,#00bcd4, #81d4fa); /* Opera 11.6 to 12.0 */
   background: -moz-radial-gradient(circle, #0288d1, #00bcd4, #81d4fa); /* Firefox 3.6 to 15 */
   background: radial-gradient(circle, #0288d1, #00bcd4,#81d4fa); /* Standard syntax */
   background-position:center center;
-  background-size: 100% 800px;
+  background-size: 100% 2000px;
   background-repeat: no-repeat; 
 }
 .globe-container
