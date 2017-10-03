@@ -1,7 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand);
-*:focus {
-  outline: none;
+
+@font-face {
+    font-family: le;
+    src: url(../Menu/fonts/Quicksand-Regular.otf);
+
 }
+
 
 body{
 /*Primary*/
@@ -23,6 +26,10 @@ body{
     background-size: 100% 2000px;
     background-repeat: no-repeat;
 
+}
+
+.blue_nav {
+  background-color: #0288d1 !important;
 }
 
 #logo-fondo{
@@ -92,7 +99,7 @@ z-index: 3;
   margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 28px;
-  font-family: 'Quicksand', bold;
+  font-family: 'Quicksand_Bold';
 }
 
 input[type="text"],
@@ -177,7 +184,7 @@ input[type="submit"]:active {
   display: block;
   margin-bottom: 40px;
   font-size: 28px;
-  font-family: 'Quicksand', bold;
+  font-family: 'Quicksand_Bold';
   color: #FFF;
   text-align: center;
 }
@@ -189,7 +196,7 @@ button.s-signin {
   border: none;
   border-radius: 2px;
   color: #FFF;
-  font-family: 'Quicksand', sans-seriff;
+  font-family: 'Quicksand_Regular', sans-seriff;
   font-weight: 500;
   transition: 0.2s ease;
   cursor: pointer;
