@@ -10,14 +10,16 @@
 	 <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
-<body  >
+<body >
+
 
 	<nav class="nav-wrapper card-panel blue accent-2 left-align panel2">
 	    <div class="panel" >
 
-	      <a href="#" data-activates="slide-out" class="brand-logo"><i class="material-icons">&#xE5D2;</i>UpDown</a>
+	      <a id="si" href="#" data-activates="slide-out" class="brand-logo"><i class="material-icons">&#xE5D2;</i>UpDown</a>
 	      <ul class="right">
 	        <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+	        <li><a id="mos" href="#"><i class="material-icons">account_circle</i></a></li>
 
 	      </ul>
 	      <ul id="slide-out" class="side-nav">
@@ -41,51 +43,104 @@
 	    </div>
 	</nav>
 
-	<!--Mauricio: menú-->
-	<div class="row">
-		<div class="col s4">
-			<div class="row center">
-				<img class="center" "responsive-img" src="Media/actividades-png/081-tumbler-11.png" width="128" height="auto"><br></br>
-				<a href="#" class="btn-large waves-effect waves-light blue">GO</a>
-			</div>
-		</div>
-		<div class="col s4">
-			<div class="row center">
-				<img class="center" "responsive-img" src="Media/actividades-png/082-tumbler-10.png" width="128" height="auto"><br></br>
-				<a href="#" class="btn-large waves-effect waves-light red">GO</a>
-			</div>
-		</div>
-		<div class="row center">
-			<img class="center" "responsive-img" src="Media/actividades-png/083-tumbler-9.png" width="128" height="auto"><br></br>
-			<a href="#" class="btn-large waves-effect waves-light green">GO</a>
-		</div>
-	</div>
 
-	<div class="row">
-		<div class="col s4">
-			<div class="row center">
-				<img class="center" "responsive-img" src="Media/actividades-png/084-tumbler-8.png" width="128" height="auto"><br></br>
-				<a href="#" class="btn-large waves-effect waves-light purple">GO</a>
-			</div>
-		</div>
-		<div class="col s4">
-			<div class="row center">
-				<img class="center" "responsive-img" src="Media/actividades-png/085-tumbler-7.png" width="128" height="auto"><br></br>
-				<a href="#" class="btn-large waves-effect waves-light orange">GO</a>
-			</div>
-		</div>
-		<div class="row center">
-			<img class="center" "responsive-img" src="Media/actividades-png/086-tumbler-6.png" width="128" height="auto"><br></br>
-			<a href="#" class="btn-large waves-effect waves-light yellow">GO</a>
-		</div>
-	</div>
 
+
+
+
+
+<section  >
+
+
+
+<div id="lo" class="ver">
+  <div class="le ">
+    <h1 class="h">Iniciar Sesión</h1>
+
+    <input type="text" name="Usuario o Email" placeholder="Username" />
+    <input type="password" name="Contrasena" placeholder="Password" />
+
+    <input type="submit" name="Entrar" value="Entrar" />
+  </div>
+
+  <div class="ri">
+    <span class="loginwith">Iniciar Sesion<br /></span>
+
+    <button class="s-signin facebook">Entrar usando facebook</button>
+    <button class="s-signin twitter">Entrar usando  Twitter</button>
+    <button class="s-signin google">Entrar usando Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+
+<div id="acd" class="fixed-action-btn horizontal click-to-toggle">
+    <a id="ac" class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+ </div>
+
+<!-- logo -->
+ <div id="acdlo" class="fixed-action-btn horizontal click-to-toggle">
+		 <img src="Media/updown transparente.png" alt="Logo UpDown"  width="250px" >
+ </div>
+
+
+
+ 		<div id="acd2" class="fixed-action-btn horizontal click-to-toggle">
+    <a id="ac" class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+		</div>
+
+   	<div id="acd3" class="fixed-action-btn horizontal click-to-toggle">
+    <a id="ac"class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  	</div>
+
+        </section>
 
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	   $('.ver').hide(); 
+        $('#mos').on('click',function(e){
+            $('.ver').slideToggle('slow');
+            e.preventDefault();
+            e.stopPropagation();
+        });
+        $('#si').on('click',function(e){
+            $('.ver').hide();
+        }); 
+           $("html").click(function(){
+         $(".ver").hide();
+    });
+
+	</script>
 	<script type="text/javascript" src="js/materialize.js"></script>
 
 	<script type="text/javascript">$(".brand-logo").sideNav();</script>
+
+
+
 </body>
 </html>
