@@ -75,7 +75,7 @@ top: 50px;
   z-index: 1;
 }
 #lo {
-  position: relative;
+  position:absolute;;
   margin: -10px 0 0 53%;
   width: 600px;
   height: 400px;
