@@ -10,6 +10,7 @@
 	 <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
 </head>
+
 <body >
 
 
@@ -27,7 +28,7 @@
             <div class="background">
               <img src="Media/fondo.png">
             </div>
-            
+
           </div></li>
           <li><a href="#!">Registro</a></li>
           <li><a href="#!">Contáctanos</a></li>
@@ -39,38 +40,38 @@
           <li><a class="waves-effect" href="#!">Ajustes</a></li>
         </ul>
 	    </div>
-	</nav>
 
 
+	</nav >
+<nav class="transparent z-depth-0 cl ck">
+<div id="lo" class="ver ">
+	<div class="le ">
+		<h1 class="h">Iniciar Sesión</h1>
+
+		<input type="text" name="Usuario o Email" placeholder="Username" />
+		<input type="password" name="Contrasena" placeholder="Password" />
+
+		<input type="submit" name="Entrar" value="Entrar" />
+	</div>
 
 
+	<div class="ri">
+		<span class="loginwith">Iniciar Sesion<br /></span>
 
+		<button class="s-signin facebook">Entrar usando Facebook</button>
+		<button class="s-signin twitter">Entrar usando  Twitter</button>
+		<button class="s-signin google">Entrar usando Google+</button>
+	</div>
+	<div class="or">OR</div>
+</div>
+</nav>
 
 
 <section  >
 
 
 
-<div id="lo" class="ver">
-  <div class="le ">
-    <h1 class="h">Iniciar Sesión</h1>
 
-    <input type="text" name="Usuario o Email" placeholder="Username" />
-    <input type="password" name="Contrasena" placeholder="Password" />
-
-    <input type="submit" name="Entrar" value="Entrar" />
-  </div>
-
-
-  <div class="ri">
-    <span class="loginwith">Iniciar Sesion<br /></span>
-
-    <button class="s-signin facebook">Entrar usando Facebook</button>
-    <button class="s-signin twitter">Entrar usando  Twitter</button>
-    <button class="s-signin google">Entrar usando Google+</button>
-  </div>
-  <div class="or">OR</div>
-</div>
 
 <div id="acd" class="fixed-action-btn horizontal click-to-toggle">
     <a id="ac" class="btn-floating btn-large green">
@@ -133,12 +134,14 @@
            $("html").click(function(){
          $(".ver").hide();
     });
+           $('.cl').on('click',function(e){
+            e.stopPropagation();
+        });
 
 	</script>
 	<script type="text/javascript" src="js/materialize.js"></script>
 
 	<script type="text/javascript">$(".brand-logo").sideNav();</script>
-
 
 
 </body>
