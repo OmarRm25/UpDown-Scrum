@@ -1,19 +1,19 @@
-<body class="colorfondo" >
-   <div >
-    <a href="https://www.google.com.mx/?hl=es&gws_rd=ssl">
-     <div class="container">
-        <div class="row">
-          <div class="col push-l3">
-            <img src="<?php echo base_url(); ?>assets/media/img/bienvenido.png">
-          </div>
-          <div class="col l12 push-l3">
+
+<body>
+
+<a href="<?php echo base_url(); ?>index.php/menu">
+
+<p class="letra"> Bienvenido a</p>
+	<div>
+		<div class="logobajo">
+
+			<h1>UP DOWN</h1>
+
+		</div>
+		<div class="logo-globe">
 
 
-                 <img class="materialUpDown" width="600" src="<?php echo base_url(); ?>assets/media/img/Up%20Down.jpg">
+		        <img src="../assets/media/img/Logo Circulo transparente.png" alt="Imagen de el logo UpDown" width="280px " >
 
-          </div>
-        </div>
-      </div>
-     </a>
-
-      </div>
+		</div>
+	</div>
