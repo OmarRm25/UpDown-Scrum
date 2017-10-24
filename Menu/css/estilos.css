@@ -86,10 +86,28 @@ body{
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   z-index: 99999999999;
-  border:1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  border-left: 1px solid;
   text-align: center;
 }
+.ri {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  background:#FFF ;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+  border:1px solid;
+  text-align: center;
 
+}
 
 .le {
   position: absolute;
@@ -179,22 +197,7 @@ input[type="submit"]:active {
 }
 
 
-.ri {
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 20px;
-  width: 300px;
-  height: 400px;
-  background:#FFF ;
-  background-size: cover;
-  background-position: center;
-  border-radius: 0 2px 2px 0;
-  border:1px solid;
-  text-align: center;
 
-}
 
 .ri .loginwith {
   display: block;
