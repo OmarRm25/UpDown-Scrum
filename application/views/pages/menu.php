@@ -10,7 +10,7 @@
 			<ul id="slide-out" class="side-nav fondomenu">
 				<li><div class="user-view" >
 					<div class="background">
-						<img src="Media/fondo.png">
+						<img src="<?php echo base_url();?>/assets/media/img/fondo.png">
 					</div>
 
 				</div></li>
@@ -86,7 +86,7 @@
 
 <!-- logo -->
 <div id="acdlo" class="fixed-action-btn horizontal click-to-toggle">
-	 <img src="Media/updown transparente.png" alt="Logo UpDown"  width="295px" >
+	 <img src="<?php echo base_url();?>assets/media/img/updowntransparente.png" alt="Logo UpDown"  width="295px" >
 </div>
 
 
