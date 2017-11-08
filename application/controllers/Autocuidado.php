@@ -21,8 +21,9 @@ class Autocuidado extends CI_Controller{
   }
 
   public function alimentacion(){
+    $data['titulo']='Conoce los diferentes alimentos';
     $this->load->view('templates/header');
-    $this->load->view('autocuidado/alimentacion.php');
+    $this->load->view('autocuidado/alimentacion.php',$data);
     $this->load->view('templates/footer');
   }
 
