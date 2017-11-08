@@ -20,4 +20,11 @@ class Autocuidado extends CI_Controller{
     $this->load->view('templates/footer');
   }
 
+  public function alimentacion(){
+    $this->load->view('templates/header');
+    $this->load->view('autocuidado/alimentacion.php');
+    $this->load->view('templates/footer');
+  }
+
+
 }
