@@ -33,17 +33,17 @@ class Usuarios extends CI_Controller
     {
         echo 'Agregando usuario...';
         //se establecen las validaciones de formulario
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[usuarios.email]');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[usuarios.email]'); 
         $this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[6]');
         $this->form_validation->set_rules('password_confirm', 'Confirm Password', 'trim|required|min_length[6]|matches[password]');
         $this->form_validation->set_rules('nombre', 'Nombre', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('paterno', 'App. paterno', 'trim|required|min_length[3]');
-        $this->form_validation->set_rules('materno', 'Ap. Materno', 'trim|required|min_length[3]');
+        //$this->form_validation->set_rules('paterno', 'App. paterno', 'trim|required|min_length[3]');
+        //$this->form_validation->set_rules('materno', 'Ap. Materno', 'trim|required|min_length[3]');
 
         // se verifican las reglas de validacion
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header');
-            $this->load->view('usuarios/agregarusuario');
+            $this->load->view('pages/menu');
             $this->load->view('templates/footer');
         } else {
             $this->load->model('usuarios_model'); // acceso a BD usuarios
@@ -53,8 +53,8 @@ class Usuarios extends CI_Controller
             'email' => $this->input->post('email'),
             'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
             'nombre' => $this->input->post('nombre'),
-            'paterno' => $this->input->post('paterno'),
-            'materno' => $this->input->post('materno')
+            'paterno' => '',
+            'materno' => ''
             );
             $this->usuarios_model->insert($data); //insertar a BD
         }

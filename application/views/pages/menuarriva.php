@@ -38,7 +38,9 @@
 
 
 <div class="ri">
-		<h1 class="h">Registro</h1>
+
+
+		<h1 class="h">Registrooo</h1>
 		<input type="text" name="Usuario" placeholder="Nombre de Usuario" />
 		<input type="email" name="Email" placeholder="Correo" />
 		<input type="password" name="Contrasena" placeholder="Contraseña" />
@@ -61,8 +63,8 @@
 
 
 <div class="ri">
-		<h1 class="h">Registro</h1>
-		<input type="text" name="Usuario" placeholder="Nombre de Usuario" />
+		<h1 class="h">Registroooo</h1>
+		<input type="text" name="Usuassrio" placeholder="Nombre de Usuario" />
 		<input type="email" name="Email" placeholder="Correo" />
 		<input type="password" name="Contrasena" placeholder="Contraseña" />
 		<input type="password" name="Contrasena" placeholder="Confirmar contraseña" />

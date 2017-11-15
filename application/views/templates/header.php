@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Menu</title>
+	<title>UpDown App</title>
 
      <link rel="icon" type="image/png" sizes="120x120" href="<?php echo base_url();?>/assets/media/img/favicon.png">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

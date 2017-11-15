@@ -39,11 +39,28 @@
 
 <div class="ri">
 		<h1 class="h">Registro</h1>
-		<input type="text" name="Usuario" placeholder="Nombre de Usuario" />
-		<input type="email" name="Email" placeholder="Correo" />
-		<input type="password" name="Contrasena" placeholder="Contraseña" />
-		<input type="password" name="Contrasena" placeholder="Confirmar contraseña" />
-		<input type="submit" name="Entrar" value="Registrarse"  />
+		<?php if (validation_errors()) : ?>
+			<div class="">
+				<div class="">
+					<?= validation_errors() ?>
+				</div>
+			</div>
+			<?php $this->form_validation->set_message('email', 'Error Message'); ?>
+		<?php endif; ?>
+
+		<?php
+				echo form_open('usuarios/agregar_usuario');
+				echo form_input(array('id'=>'email','name'=>'email','placeholder'=>'Email'));
+				echo form_password(array('id'=>'pass','name'=>'password','placeholder'=>'password'));
+				echo form_password(array('id'=>'pass','name'=>'password_confirm','placeholder'=>'Confirmar Password'));
+				echo form_input(array('id'=>'nom','name'=>'nombre','placeholder'=>'nombre'));
+				//echo form_input(array('id'=>'pat','name'=>'paterno','placeholder'=>'paterno'));
+				//echo form_input(array('id'=>'mat','name'=>'materno','placeholder'=>'Materno'));
+				echo form_submit(array('id'=>'submit','value'=>'Agregar'));
+				echo form_close();
+
+		?>
+
 </div>
 <div class="or">OR</div>
 </div>

@@ -24,10 +24,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //Chuy
-//$config['base_url'] = 'http://updown.local';
+$config['base_url'] = 'http://updown.local';
 
 //aaron
-$config['base_url'] = 'http://localhost/UpDown-Scrum';
+//$config['base_url'] = 'http://localhost/UpDown-Scrum';
 
 //$config['base_url'] = 'http://localhos';
 
