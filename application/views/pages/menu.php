@@ -3,7 +3,7 @@
 
 			<a id="si" href="#" data-activates="slide-out" class="brand-logo"><i class="material-icons">&#xE5D2;</i>UpDown</a>
 			<ul class="right">
-				<li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+				<li><a  href="menu" ><i class="material-icons">refresh</i></a></li>
 				<li><a id="mos" href="#"><i class="material-icons">account_circle</i></a></li>
 
 			</ul>
