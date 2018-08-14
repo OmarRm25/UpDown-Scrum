@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html id=ihtml>
+<head id=ihead>
+	<meta charset="utf-8">
+
+	<script>
+
+//gebi caught object by id 
+function gebi(i){return document.getElementById(i);}
+//function for svgo for make svg object (create svg object)
+function sobj(i,t,p){var u='http://www.w3.org/2000/svg';var n=document.createElementNS(u,t);n.id=i;gebi(p).appendChild(n);}
+//function for create svg object(put more attributes in svg object)
+function svgo(i,y,p){sobj(i,'svg',p);sans(i,'xlink','http://www.w3.org/1999/xlink');sans(i,'viewBox','0 0 512 512');sans(i,'enable-background','new 0 0 512 512');sans(i,'title',y);}
+//unsel unselect object by id
+function unsel(i){var e=gebi(i);var s = e.style;s.userSelect = "none";s.webkitUserSelect = "none";s.MozUserSelect = "none";e.setAttribute("unselectable", "on");}
+//create object put id-> i:String ; type of element(for exemple 'body' or 'div' or ...) -> t:String, id parent -> p:String
+function obj(i,t,p){var n=document.createElement(t);n.id=i;gebi(p).appendChild(n);}
+//efect alpha overmouse
+function ef(i){var k=gebi(i);k.addEventListener("mouseover",function(){k.style.opacity=0.5;});k.addEventListener("mouseout",function(){k.style.opacity=1;});}
+//create a box id->i:String;left->x:String;top->y:String;height->h:String;width->w:String
+function kxa(i,x,y,h,w,c){var n = gebi(i);unsel(i);n.style.border="1px solid "+c;n.style.position="absolute";n.style.left=x+"px";n.style.top=y+"px";if(h=='auto'){n.style.height=h;}else{n.style.height=h+"px";}if(w=='auto'){n.style.height=w;}else{n.style.width=w+"px";}}
+//create type of corners
+function can(i,d,u,c,s){var k=gebi(i);k.style.borderRadius=d+"px "+u+"px "+c+"px "+s+"px";}
+//efect drag function event
+function drag(e2){function mou(e2){o.style.left=e2.pageX-x0+px+"px";o.style.top=e2.pageY-y0+py+"px";document.addEventListener("mouseup", upm, true);}function upm(e2){document.removeEventListener("mousemove", mou, true);document.removeEventListener("mouseup", upm, true);}o=document.getElementById(this.id);x0=e2.pageX;y0=e2.pageY;px=parseInt(o.style.left);py=parseInt(o.style.top);document.addEventListener("mousemove", mou, true);document.addEventListener("mouseup", upm, true);}
+//svgp crea objeto svg path
+function svgp(i,p,d,c){sobj(i+p,'path',p);sans(i+p,"fill",c);sans(i+p,"d",d);}
+//sans add svg attribute id->i:String;svg type of attribute->t:String;value svg attribute->d:String
+function sans(i,t,d){var e=gebi(i);e.setAttributeNS(null,t,d);}
+//svgc crea objeto svg circle
+function svgc(i,p,x,y,r,c){sobj(i+p,'circle',p);sans(i+p,"cx",x);sans(i+p,"cy",y);sans(i+p,"r",r);sans(i+p,"fill",c);} 
+//create a link in a object id object->i:String; link->l:String
+function link(i,l){gebi(i).onclick=function (){window.location.replace(l);};}
+
+//////////////////////////////system encrypt decrypt function created by aukun
+//functions for enigma2
+function intercanvi(a,u,v){var a=a;var u=u%a.length;var v=v%a.length;var b=a[u];var c=a[v];a[u]=c;a[v]=b;return a;}
+function norepetit(s){var f='';var z='';for(var i=0;i<s.length;i++){z=s.charAt(i);if(f.indexOf(z)==-1){f=f+z;}else{}}return f;}
+function mesclar(a,b){var a=a;var b=b;if(a.length<b.length){var g=b;var p=a;}else{var g=a;var p=b;}var t=Math.floor(g.length/p.length);var h=g;for(var i=0;i<p.length;i++){var lletra=p.charAt(i);h=g;g=h.substring(0,((t+1)*i)+1)+lletra+h.substring(((t+1)*i)+1);}return g;}
+//function for decrypt string->t:String;length of original string->f
+function desenigma2(t,f){var u=desmesclar(t,f);var strf=u[1];var r=u[0];var arr=r.split('');var strf2='';for(var j=0;j<strf.length;j++){var lletra=strf.charAt(strf.length-1-j);var index0=arr.indexOf(lletra);var index1=index0-j+((2*strf.length)-1);arr=intercanvi(arr,index0,index1);strf2=arr[index0]+strf2;}return strf2;}
+//functions for desenigma
+function desmesclar(a,n){if(arguments.length==1){var n=16;}else if(arguments.length>1){var n=n;}else{}   var a=a;var l=(a.length-n);var t=Math.floor(n/l);var p='';var g=a;var z=0;for(var i=0;i<l;i++){z=(t*i)+1;p=p+g.substring(z,z+1);g=g.substring(0,z)+g.substring(z+1);}var u=new Array();u[0]=p;u[1]=g;return u;}
+
+
+//make body
+obj('ibody','body','ihtml');
+//make div idiv0
+obj('idiv0','div','ibody');
+//make box for idiv0
+kxa('idiv0','5','5','155','155','#bbbbbb');can('idiv0','10','10','10','10');
+//make variables for changeline
+var cl=String.fromCharCode(13)+String.fromCharCode(10);var cll=cl+cl;   
+//make svg object login
+svgo('svglogin',cl+'   LOGIN   '+cll,'idiv0');
+//put path object in svg object (svglogin)
+svgp('p1','svglogin',"M356,283c-27,22-62,34-99,34c-36,0-71-12-99-35C83,309,50,404,50,448h412C462,405,428,310,356,283z",'black');
+svgc('c1','svglogin','250','165','120','black');
+svgc('c2','svglogin','299','303','60','white');
+svgc('c3','svglogin','326','282','15','black');
+svgp('p2','svglogin',"M254,395h-23v23h-24v22h-54v-38l78-78c8,21,26,38,49,46L254,395z",'white');
+//efect alphas
+ef('idiv0');
+//create drag efect
+gebi('idiv0').onmousedown=drag;
+//pongo el link con el string encriptado
+link('idiv0',desenigma2('c.aissm/atar/folrctpim:hp:ioiasbmrthb..mhl','26'))
+
+/*system aukun, created by aukun thanks to all for read me*/
+</script>
+
+</head>
+
+</html>
